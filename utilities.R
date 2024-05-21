@@ -1,12 +1,20 @@
-#' Fit a Normal Distribution when provided with data.
+#' Normal Distribution Data Fit
 #'
-#' This function fits a Normal Distribution when provided with data.
+#' This function fits a normal distribution to the given data and provides various statistics and graphs.
 #'
-#' @param data data
-#' @param pertinent_graphs pertinent graphs
-#' @param desired_quantiles desired quantiles
-#' @param value_of_alpha_for_CI value of alpha for CI
-#' @param value_of_alpha_for_CR value of alpha for CR
+#' @param data A numeric vector of data to be fitted.
+#' @param pertinent_graphs A logical value indicating whether to generate pertinent graphs.
+#' @param desired_quantiles A numeric vector of quantiles to be computed.
+#' @param value_of_alpha_for_CI A numeric value for the level of significance for confidence intervals.
+#' @param value_of_alpha_for_CR A numeric value for the level of significance for confidence regions.
+#'
+#' @return A list containing various summary statistics, test results, and graphs (if pertinent_graphs = TRUE).
+#'
+#' @examples
+#' \dontrun{
+#' data <- rnorm(100)
+#' Normal_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
+#' }
 #'
 #' @export
 Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -831,7 +839,7 @@ Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantil
   
   
   
-  Useful_List = list(
+  Useful_List = base::list(
     preliminary_summary_statistics = base::summary(data)
     , sample_size = base::length(data)
     , minimum = base::min(data)
@@ -882,7 +890,7 @@ Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantil
     
     , if(pertinent_graphs == TRUE) {
       
-      c(
+      base::c(
         Graph_of_eCDF_with_Normal_Fitted_CDF_Overlay = graph_of_eCDF_with_Normal_Fitted_CDF_overlay()
         , Graph_of_eLEV_with_Normal_Fitted_LEV_Overlay = graph_of_eLEV_with_Normal_Fitted_LEV_overlay()
         , Graph_of_eMRL_with_Normal_Fitted_MRL_Overlay = graph_of_eMRL_with_Normal_Fitted_MRL_overlay()
@@ -906,15 +914,23 @@ Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantil
   
 }
 
-#' Fit a Gamma Distribution when provided with data.
+#' Gamma Distribution Data Fit
 #'
-#' This function fits a Gamma Distribution when provided with data.
+#' This function fits a gamma distribution to the given data and provides various statistics and graphs.
 #'
-#' @param data data
-#' @param pertinent_graphs pertinent graphs
-#' @param desired_quantiles desired quantiles
-#' @param value_of_alpha_for_CI value of alpha for CI
-#' @param value_of_alpha_for_CR value of alpha for CR
+#' @param data A numeric vector of data to be fitted.
+#' @param pertinent_graphs A logical value indicating whether to generate pertinent graphs.
+#' @param desired_quantiles A numeric vector of quantiles to be computed.
+#' @param value_of_alpha_for_CI A numeric value for the level of significance for confidence intervals.
+#' @param value_of_alpha_for_CR A numeric value for the level of significance for confidence regions.
+#'
+#' @return A list containing various summary statistics, test results, and graphs (if pertinent_graphs = TRUE).
+#'
+#' @examples
+#' \dontrun{
+#' data <- rgamma(100)
+#' Gamma_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
+#' }
 #'
 #' @export
 Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -1740,7 +1756,7 @@ Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantile
   
   
   
-  Useful_List = list(
+  Useful_List = base::list(
     preliminary_summary_statistics = base::summary(data)
     , sample_size = base::length(data)
     , minimum = base::min(data)
@@ -1791,7 +1807,7 @@ Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantile
     
     , if(pertinent_graphs == TRUE) {
       
-      c(
+      base::c(
         Graph_of_eCDF_with_Gamma_Fitted_CDF_Overlay = graph_of_eCDF_with_Gamma_Fitted_CDF_overlay()
         , Graph_of_eLEV_with_Gamma_Fitted_LEV_Overlay = graph_of_eLEV_with_Gamma_Fitted_LEV_overlay()
         , Graph_of_eMRL_with_Gamma_Fitted_MRL_Overlay = graph_of_eMRL_with_Gamma_Fitted_MRL_overlay()
@@ -1815,15 +1831,23 @@ Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantile
   
 }
 
-#' Fit a Weibull Distribution when provided with data.
+#' Weibull Distribution Data Fit
 #'
-#' This function fits a Weibull Distribution when provided with data.
+#' This function fits a Weibull distribution to the given data and provides various statistics and graphs.
 #'
-#' @param data data
-#' @param pertinent_graphs pertinent graphs
-#' @param desired_quantiles desired quantiles
-#' @param value_of_alpha_for_CI value of alpha for CI
-#' @param value_of_alpha_for_CR value of alpha for CR
+#' @param data A numeric vector of data to be fitted.
+#' @param pertinent_graphs A logical value indicating whether to generate pertinent graphs.
+#' @param desired_quantiles A numeric vector of quantiles to be computed.
+#' @param value_of_alpha_for_CI A numeric value for the level of significance for confidence intervals.
+#' @param value_of_alpha_for_CR A numeric value for the level of significance for confidence regions.
+#'
+#' @return A list containing various summary statistics, test results, and graphs (if pertinent_graphs = TRUE).
+#'
+#' @examples
+#' \dontrun{
+#' data <- rweibull(100)
+#' Weibull_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
+#' }
 #'
 #' @export
 Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -2653,7 +2677,7 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
   
   
   
-  Useful_List = list(
+  Useful_List = base::list(
     preliminary_summary_statistics = base::summary(data)
     , sample_size = base::length(data)
     , minimum = base::min(data)
@@ -2704,7 +2728,7 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
     
     , if(pertinent_graphs == TRUE) {
       
-      c(
+      base::c(
         Graph_of_eCDF_with_Weibull_Fitted_CDF_Overlay = graph_of_eCDF_with_Weibull_Fitted_CDF_overlay()
         , Graph_of_eLEV_with_Weibull_Fitted_LEV_Overlay = graph_of_eLEV_with_Weibull_Fitted_LEV_overlay()
         , Graph_of_eMRL_with_Weibull_Fitted_MRL_Overlay = graph_of_eMRL_with_Weibull_Fitted_MRL_overlay()
@@ -2728,15 +2752,23 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
   
 }
 
-#' Fit an Inverse Gamma Distribution when provided with data.
+#' Inverse Gamma Distribution Data Fit
 #'
-#' This function fits an Inverse Gamma Distribution when provided with data.
+#' This function fits an inverse gamma distribution to the given data and provides various statistics and graphs.
 #'
-#' @param data data
-#' @param pertinent_graphs pertinent graphs
-#' @param desired_quantiles desired quantiles
-#' @param value_of_alpha_for_CI value of alpha for CI
-#' @param value_of_alpha_for_CR value of alpha for CR
+#' @param data A numeric vector of data to be fitted.
+#' @param pertinent_graphs A logical value indicating whether to generate pertinent graphs.
+#' @param desired_quantiles A numeric vector of quantiles to be computed.
+#' @param value_of_alpha_for_CI A numeric value for the level of significance for confidence intervals.
+#' @param value_of_alpha_for_CR A numeric value for the level of significance for confidence regions.
+#'
+#' @return A list containing various summary statistics, test results, and graphs (if pertinent_graphs = TRUE).
+#'
+#' @examples
+#' \dontrun{
+#' data <- rinvgamma(100)
+#' Inverse_Gamma_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
+#' }
 #'
 #' @export
 Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -3543,7 +3575,7 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
   
   
   
-  Useful_List = list(
+  Useful_List = base::list(
     preliminary_summary_statistics = base::summary(data)
     , sample_size = base::length(data)
     , minimum = base::min(data)
@@ -3590,7 +3622,7 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
     
     , if(pertinent_graphs == TRUE) {
       
-      c(
+      base::c(
         Graph_of_eCDF_with_Inverse_Gamma_Fitted_CDF_Overlay = graph_of_eCDF_with_Inverse_Gamma_Fitted_CDF_overlay()
         , Graph_of_eLEV_with_Inverse_Gamma_Fitted_LEV_Overlay = graph_of_eLEV_with_Inverse_Gamma_Fitted_LEV_overlay()
         , Graph_of_eMRL_with_Inverse_Gamma_Fitted_MRL_Overlay = graph_of_eMRL_with_Inverse_Gamma_Fitted_MRL_overlay()
@@ -3612,15 +3644,23 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
   
 }
 
-#' Fit an Inverse Weibull Distribution when provided with data.
+#' Inverse Weibull Distribution Data Fit
 #'
-#' This function fits an Inverse Weibull Distribution when provided with data.
+#' This function fits an inverse Weibull distribution to the given data and provides various statistics and graphs.
 #'
-#' @param data data
-#' @param pertinent_graphs pertinent graphs
-#' @param desired_quantiles desired quantiles
-#' @param value_of_alpha_for_CI value of alpha for CI
-#' @param value_of_alpha_for_CR value of alpha for CR
+#' @param data A numeric vector of data to be fitted.
+#' @param pertinent_graphs A logical value indicating whether to generate pertinent graphs.
+#' @param desired_quantiles A numeric vector of quantiles to be computed.
+#' @param value_of_alpha_for_CI A numeric value for the level of significance for confidence intervals.
+#' @param value_of_alpha_for_CR A numeric value for the level of significance for confidence regions.
+#'
+#' @return A list containing various summary statistics, test results, and graphs (if pertinent_graphs = TRUE).
+#'
+#' @examples
+#' \dontrun{
+#' data <- rinvweibull(100)
+#' Inverse_Weibull_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
+#' }
 #'
 #' @export
 Inverse_Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -4439,7 +4479,7 @@ Inverse_Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desire
   
   
   
-  Useful_List = list(
+  Useful_List = base::list(
     preliminary_summary_statistics = base::summary(data)
     , sample_size = base::length(data)
     , minimum = base::min(data)
@@ -4486,7 +4526,7 @@ Inverse_Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desire
     
     , if(pertinent_graphs == TRUE) {
       
-      c(
+      base::c(
         Graph_of_eCDF_with_Inverse_Weibull_Fitted_CDF_Overlay = graph_of_eCDF_with_Inverse_Weibull_Fitted_CDF_overlay()
         , Graph_of_eLEV_with_Inverse_Weibull_Fitted_LEV_Overlay = graph_of_eLEV_with_Inverse_Weibull_Fitted_LEV_overlay()
         , Graph_of_eMRL_with_Inverse_Weibull_Fitted_MRL_Overlay = graph_of_eMRL_with_Inverse_Weibull_Fitted_MRL_overlay()
