@@ -1,18 +1,3 @@
-library(dplyr)
-library(ggplot2)
-library(moments)    #   Used to calculate skewness and kurtosis.
-library(actuar)     #   Used for general plotting.
-library(car)        #   Used for the P-P Plot and Q-Q Plot.
-library(e1071)
-library(evd)
-library(stats)      #   used for uniroot function.
-library(nleqslv)    #   used for nleqslv function.
-library(EnvStats)
-library(fitdistrplus)
-library(matlib)
-library(ADGofTest)
-library(ellipse)    #   used for confidence regions.
-
 #' Fit a Normal Distribution when provided with data.
 #'
 #' This function fits a Normal Distribution when provided with data.
@@ -22,7 +7,6 @@ library(ellipse)    #   used for confidence regions.
 #' @param desired_quantiles desired quantiles
 #' @param value_of_alpha_for_CI value of alpha for CI
 #' @param value_of_alpha_for_CR value of alpha for CR
-#' @return output
 #'
 #' @export
 Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -931,7 +915,6 @@ Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantil
 #' @param desired_quantiles desired quantiles
 #' @param value_of_alpha_for_CI value of alpha for CI
 #' @param value_of_alpha_for_CR value of alpha for CR
-#' @return output
 #'
 #' @export
 Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -1841,7 +1824,6 @@ Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantile
 #' @param desired_quantiles desired quantiles
 #' @param value_of_alpha_for_CI value of alpha for CI
 #' @param value_of_alpha_for_CR value of alpha for CR
-#' @return output
 #'
 #' @export
 Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -2755,7 +2737,6 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
 #' @param desired_quantiles desired quantiles
 #' @param value_of_alpha_for_CI value of alpha for CI
 #' @param value_of_alpha_for_CR value of alpha for CR
-#' @return output
 #'
 #' @export
 Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {
@@ -3640,7 +3621,6 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
 #' @param desired_quantiles desired quantiles
 #' @param value_of_alpha_for_CI value of alpha for CI
 #' @param value_of_alpha_for_CR value of alpha for CR
-#' @return output
 #'
 #' @export
 Inverse_Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantiles, value_of_alpha_for_CI, value_of_alpha_for_CR) {

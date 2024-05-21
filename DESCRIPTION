@@ -1,8 +1,8 @@
 Package: ActuDistDataFit
-Title: Fits a distribution given data and provides pertinent insights with respect to actuarial analysis.
+Title: Fits a distribution given data and provides actuarial analysis insights.
 Version: 0.0.0.0001
-Authors@R: person("Ioannis", "Papadopoulos", , "yannipapadopoulos@gmail.com", role = c("aut", "cre"))
-Description: Provide data and output fits a distribution and provides actuarial analysis insights.
+Authors@R: person("Ioannis", "Papadopoulos", email = "yannipapadopoulos@gmail.com", role = c("aut", "cre"))
+Description: Provide data and output fits a distribution and returns actuarial analysis insights.
 License: MIT
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
