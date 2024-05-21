@@ -2,9 +2,23 @@ Package: ActuDistDataFit
 Title: Fits a distribution given data and provides pertinent insights with respect to actuarial analysis.
 Version: 0.0.0.0001
 Authors@R: person("Ioannis", "Papadopoulos", , "yannipapadopoulos@gmail.com", role = c("aut", "cre"))
-Description: Select a function to fit a distribution given data, and the output provides pertinent insights with respect to actuarial analysis.
+Description: Provide data and output fits a distribution and provides actuarial analysis insights.
 License: MIT
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
-Imports: dplyr,ggplot2,moments,actuar,car,e1071,evd,stats,nleqslv,EnvStats,fitdistrplus,matlib,ADGofTest,ellipse
+Imports:
+    dplyr,
+    ggplot2,
+    moments,
+    actuar,
+    car,
+    e1071,
+    evd,
+    stats,
+    nleqslv,
+    EnvStats,
+    fitdistrplus,
+    matlib,
+    ADGofTest,
+    ellipse

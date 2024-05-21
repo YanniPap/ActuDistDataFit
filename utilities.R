@@ -1,3 +1,18 @@
+library(dplyr)
+library(ggplot2)
+library(moments)    #   Used to calculate skewness and kurtosis.
+library(actuar)     #   Used for general plotting.
+library(car)        #   Used for the P-P Plot and Q-Q Plot.
+library(e1071)
+library(evd)
+library(stats)      #   used for uniroot function.
+library(nleqslv)    #   used for nleqslv function.
+library(EnvStats)
+library(fitdistrplus)
+library(matlib)
+library(ADGofTest)
+library(ellipse)    #   used for confidence regions.
+
 #' Fit a Normal Distribution when provided with data.
 #'
 #' This function fits a Normal Distribution when provided with data.
@@ -23,20 +38,7 @@ Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantil
   
   #   Before we begin, we will load all the necessary libraries.
   
-  library(dplyr)
-  library(ggplot2)
-  library(moments)    #   Used to calculate skewness and kurtosis.
-  library(actuar)     #   Used for general plotting.
-  library(car)        #   Used for the P-P Plot and Q-Q Plot.
-  library(e1071)
-  library(evd)
-  library(stats)      #   used for uniroot function.
-  library(nleqslv)    #   used for nleqslv function.
-  library(EnvStats)
-  library(fitdistrplus)
-  library(matlib)
-  library(ADGofTest)
-  library(ellipse)    #   used for confidence regions.
+  
   
   
   #   We will now begin by loading the data.
@@ -920,8 +922,6 @@ Normal_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantil
   
 }
 
-
-
 #' Fit a Gamma Distribution when provided with data.
 #'
 #' This function fits a Gamma Distribution when provided with data.
@@ -947,20 +947,7 @@ Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantile
   
   #   Before we begin, we will load all the necessary libraries.
   
-  library(dplyr)
-  library(ggplot2)
-  library(moments)    #   Used to calculate skewness and kurtosis.
-  library(actuar)     #   Used for general plotting.
-  library(car)        #   Used for the P-P Plot and Q-Q Plot.
-  library(e1071)
-  library(evd)
-  library(stats)      #   used for uniroot function.
-  library(nleqslv)    #   used for nleqslv function.
-  library(EnvStats)
-  library(fitdistrplus)
-  library(matlib)
-  library(ADGofTest)
-  library(ellipse)    #   used for confidence regions.
+  
   
   
   #   We will now begin by loading the data.
@@ -1845,7 +1832,6 @@ Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quantile
   
 }
 
-
 #' Fit a Weibull Distribution when provided with data.
 #'
 #' This function fits a Weibull Distribution when provided with data.
@@ -1871,20 +1857,7 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
   
   #   Before we begin, we will load all the necessary libraries.
   
-  library(dplyr)
-  library(ggplot2)
-  library(moments)    #   Used to calculate skewness and kurtosis.
-  library(actuar)     #   Used for general plotting.
-  library(car)        #   Used for the P-P Plot and Q-Q Plot.
-  library(e1071)
-  library(evd)
-  library(stats)      #   used for uniroot function.
-  library(nleqslv)    #   used for nleqslv function.
-  library(EnvStats)
-  library(fitdistrplus)
-  library(matlib)
-  library(ADGofTest)
-  library(ellipse)    #   used for confidence regions.
+  
   
   
   #   We will now begin by loading the data.
@@ -2773,7 +2746,6 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
   
 }
 
-
 #' Fit an Inverse Gamma Distribution when provided with data.
 #'
 #' This function fits an Inverse Gamma Distribution when provided with data.
@@ -2799,20 +2771,7 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
   
   #   Before we begin, we will load all the necessary libraries.
   
-  library(dplyr)
-  library(ggplot2)
-  library(moments)    #   Used to calculate skewness and kurtosis.
-  library(actuar)     #   Used for general plotting.
-  library(car)        #   Used for the P-P Plot and Q-Q Plot.
-  library(e1071)
-  library(evd)
-  library(stats)      #   used for uniroot function.
-  library(nleqslv)    #   used for nleqslv function.
-  library(EnvStats)
-  library(fitdistrplus)
-  library(matlib)
-  library(ADGofTest)
-  library(ellipse)    #   used for confidence regions.
+  
   
   
   #   We will now begin by loading the data.
@@ -3672,7 +3631,6 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
   
 }
 
-
 #' Fit an Inverse Weibull Distribution when provided with data.
 #'
 #' This function fits an Inverse Weibull Distribution when provided with data.
@@ -3698,20 +3656,7 @@ Inverse_Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desire
   
   #   Before we begin, we will load all the necessary libraries.
   
-  library(dplyr)
-  library(ggplot2)
-  library(moments)    #   Used to calculate skewness and kurtosis.
-  library(actuar)     #   Used for general plotting.
-  library(car)        #   Used for the P-P Plot and Q-Q Plot.
-  library(e1071)
-  library(evd)
-  library(stats)      #   used for uniroot function.
-  library(nleqslv)    #   used for nleqslv function.
-  library(EnvStats)
-  library(fitdistrplus)
-  library(matlib)
-  library(ADGofTest)
-  library(ellipse)    #   used for confidence regions.
+  
   
   
   #   We will now begin by loading the data.
@@ -4582,7 +4527,3 @@ Inverse_Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desire
   
   
 }
-
-
-# YP
-
