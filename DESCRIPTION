@@ -1,10 +1,7 @@
 Package: ActuDistDataFit
 Title: Fits a distribution given data and provides pertinent insights with respect to actuarial analysis.
 Version: 0.0.0.0001
-Authors@R: 
-    person("Ioannis", "Papadopoulos", , "yannipapadopoulos@gmail.com", role = c("aut", "cre"),
-#           comment = c(ORCID = "YOUR-ORCID-ID")
-)
+Authors@R: person("Ioannis", "Papadopoulos", , "yannipapadopoulos@gmail.com", role = c("aut", "cre"))
 Description: Select a function to fit a distribution given data, and the output provides pertinent insights with respect to actuarial analysis.
 License: MIT
 Encoding: UTF-8
