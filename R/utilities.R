@@ -2766,8 +2766,6 @@ Weibull_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_quanti
 #'
 #' @examples
 #' \dontrun{
-#' install.packages("actuar")    # See below.
-#' library(actuar)               # This is done to ensure the required functions are defined.
 #' data <- rinvgamma(100)
 #' Inverse_Gamma_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
 #' }
@@ -3660,8 +3658,6 @@ Inverse_Gamma_Distribution_Data_Fit <- function(data, pertinent_graphs, desired_
 #'
 #' @examples
 #' \dontrun{
-#' install.packages("actuar")    # See below.
-#' library(actuar)               # This is done to ensure the required functions are defined.
 #' data <- rinvweibull(100)
 #' Inverse_Weibull_Distribution_Data_Fit(data, TRUE, c(0.1, 0.5, 0.9), 0.05, 0.05)
 #' }
